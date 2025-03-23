@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agent Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <h1>Travel Agent Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#deals">Deals</a></li>
+                <li><a href="#messages">Messages</a></li>
+                <li><a href="#businesses">Businesses</a></li>
+                <li><a href="#news">News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to the Travel Agent Portal</h2>
+        <p>Connect with agents, publish deals, and explore travel opportunities.</p>
+    </section>
+
+    <!-- Registration Form -->
+    <section id="register">
+        <h2>Register</h2>
+        <form id="registerForm">
+            <input type="text" placeholder="Business Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <!-- Login Form -->
+    <section id="login">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <!-- Dashboard -->
+    <section id="dashboard">
+        <h2>Dashboard</h2>
+        <p>Welcome, <span id="user-name">User</span>!</p>
+        <p>Check your deals, messages, and analytics.</p>
+    </section>
+
+    <!-- Deal Management -->
+    <section id="deals">
+        <h2>Manage Deals</h2>
+        <form id="dealForm">
+            <input type="text" placeholder="Deal Title" required>
+            <input type="text" placeholder="Price" required>
+            <input type="date" required>
+            <textarea placeholder="Deal Description"></textarea>
+            <button type="submit">Publish Deal</button>
+        </form>
+        <div id="dealList"></div>
+    </section>
+
+    <!-- Messaging System -->
+    <section id="messages">
+        <h2>Messages</h2>
+        <textarea id="messageBox" placeholder="Type your message..."></textarea>
+        <button id="sendMessage">Send</button>
+        <div id="messageList"></div>
+    </section>
+
+    <!-- Supporting Businesses -->
+    <section id="businesses">
+        <h2>Supporting Businesses</h2>
+        <p>Find services like hotels, transport, and activities.</p>
+    </section>
+
+    <!-- News & Knowledge Base -->
+    <section id="news">
+        <h2>Industry News & Knowledge Base</h2>
+        <p>Stay updated with travel trends and best practices.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Travel Agent Portal</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
